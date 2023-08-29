@@ -1,0 +1,213 @@
+/* Calculator section styles */
+.calculator-section {
+  padding: 70px 0;
+}
+
+@media (max-width: 991px) {
+  .calculator-section {
+    padding: 45px 0;
+  }
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Slider container styles */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  position: relative;
+}
+
+.range-container {
+  position: relative;
+  width: 90%;
+}
+
+.slider-value {
+  font-size: 16px;
+  color: #333;
+  width: 200px;
+  padding: 0 15px;
+}
+
+@media (max-width: 991px) {
+  .slider-value {
+    width: 120px;
+  }
+}
+
+.payment-slider {
+  width: 100%;
+  height: 9px;
+  -webkit-appearance: none;
+  background: #3986A7;
+  outline: none;
+  border-radius: 4.5px;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 27px !important;
+  height: 27px !important;
+  background-color: #FFF;
+  border: 3px solid #98C6DA;
+  border-radius: 50%;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+
+/* Result box styles */
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E0EEF3;
+  border-radius: 7px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .payment-info {
+    width: 80%;
+  }
+  .result-box .button-wide {
+    width: 80%;
+  }
+}
+
+.payment-label {
+  color: #133182;
+  opacity: 0.6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.monthly-payment {
+  color: #133182;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 125.926% */
+  margin-right: 3.5px;
+}
+
+.payment-container {
+  display: flex;
+  align-items: center;
+  color: #133182;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 178.947% */
+  letter-spacing: -0.19px;
+  
+}
+
+/* ... previous styles ... */
+
+/* Slider label styles */
+#slider-label {
+  position: absolute;
+  top: -75px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 9px rgba(39, 59, 113, 0.22);
+  background: #fff;
+  border-radius: 7px;
+  padding: 5px 15px;
+  filter: drop-shadow(0px 4px 9px rgba(39, 59, 113, 0.22));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#paymentSlider {
+  cursor: pointer;
+}
+
+#slider-label {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#slider-label::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  bottom: 0;
+  transform: translateY(100%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+#slider-label .amount {
+  color: #749835;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.slider-label-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.loan-amount {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.slider-label-triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+}
+
+/* Slider label styles */
+.slider-label {
+  position: absolute;
+  top: -50px; /* Adjust this to position the label above the knob */
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2; /* Ensure the label is above the slider */
+  pointer-events: none; /* Allow clicks to pass through the label */
+  transition: left 0.2s; /* Add smooth transition for label movement */
+}
