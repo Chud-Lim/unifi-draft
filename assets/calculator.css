@@ -92,6 +92,7 @@ input[type="range"]::-moz-range-thumb {
   .payment-info {
     width: 80%;
   }
+
   .result-box .button-wide {
     width: 80%;
   }
@@ -110,7 +111,8 @@ input[type="range"]::-moz-range-thumb {
   font-size: 27px;
   font-style: normal;
   font-weight: 600;
-  line-height: 34px; /* 125.926% */
+  line-height: 34px;
+  /* 125.926% */
   margin-right: 3.5px;
 }
 
@@ -121,9 +123,10 @@ input[type="range"]::-moz-range-thumb {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 34px; /* 178.947% */
+  line-height: 34px;
+  /* 178.947% */
   letter-spacing: -0.19px;
-  
+
 }
 
 /* ... previous styles ... */
@@ -155,7 +158,7 @@ input[type="range"]::-moz-range-thumb {
 
 #slider-label {
   color: var(--black);
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -164,8 +167,8 @@ input[type="range"]::-moz-range-thumb {
 #slider-label::after {
   content: '';
   position: absolute;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   bottom: 0;
   transform: translateY(100%);
   border-left: 10px solid transparent;
@@ -175,7 +178,7 @@ input[type="range"]::-moz-range-thumb {
 
 #slider-label .amount {
   color: #749835;
-  font-size: 18px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -203,11 +206,15 @@ input[type="range"]::-moz-range-thumb {
 /* Slider label styles */
 .slider-label {
   position: absolute;
-  top: -50px; /* Adjust this to position the label above the knob */
+  top: -50px;
+  /* Adjust this to position the label above the knob */
   left: 0;
   display: flex;
   align-items: center;
-  z-index: 2; /* Ensure the label is above the slider */
-  pointer-events: none; /* Allow clicks to pass through the label */
-  transition: left 0.2s; /* Add smooth transition for label movement */
+  z-index: 2;
+  /* Ensure the label is above the slider */
+  pointer-events: none;
+  /* Allow clicks to pass through the label */
+  transition: left 0.2s;
+  /* Add smooth transition for label movement */
 }
