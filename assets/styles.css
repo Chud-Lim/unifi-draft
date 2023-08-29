@@ -1000,6 +1000,17 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .page-header {
+    height: 86vh;
+    background-size: cover;
+  }
+
+  .page-header::after {
+    top: -2px;
+  }
+}
+
 .page-header .container {
   position: relative;
   z-index: 1;
