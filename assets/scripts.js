@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      if (content.style.maxHeight = "0px") {
+      if (content.style.maxHeight !== "1000px") {
         content.style.maxHeight = "1000px";
         arrowIcon.style.transform = "rotate(180deg)";
-      } else {
+    } else {
         content.style.maxHeight = "0px";
         arrowIcon.style.transform = "rotate(0deg)";
-      }
+    }
     });
   });
 
