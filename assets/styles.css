@@ -159,7 +159,8 @@ body {
 }
 
 .header-buttons .button-transparent-blue {
-  border-color: white;
+  border-color: #133182;
+  background: white;
 }
 
 .button-cta svg {
@@ -252,6 +253,7 @@ body {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
+  font-size: 25px;
 }
 
 .faq-content {
@@ -948,6 +950,7 @@ body {
 }
 
 .page-header .ribbon::before {
+  display: none;
   content: '';
   position: absolute;
   width: 0;
@@ -961,6 +964,7 @@ body {
 }
 
 .page-header .ribbon::after {
+  display: none;
   content: '';
   position: absolute;
   width: 0;
@@ -1193,7 +1197,7 @@ body {
 }
 
 .navigation-bar .logo img {
-  max-width: 100px;
+  max-width: 182px;
   /* Adjust logo size as needed */
 }
 
@@ -1421,6 +1425,9 @@ body {
 .cta-bar .bar-container {
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta-bar img {
@@ -1460,5 +1467,32 @@ body {
   .cta-bar .bar-container>span:nth-child(3) {
     padding-bottom: 20px;
     margin: 8px 0 0 !important;
+  }
+}
+
+.header-buttons .button-transparent-blue:hover {
+  background: #133182;
+}
+
+.mobile-amt {
+  display: none;
+}
+
+.rate-form button {
+  font-size: 22px;
+}
+
+@media(max-width:768px) {
+  .desktop-amt {
+    display: none;
+  }
+
+  .mobile-amt {
+    display: block;
+  }
+
+  .navigation-bar .logo img {
+    max-width: 160px;
+    /* Adjust logo size as needed */
   }
 }
