@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
+
 
 const paymentSlider = document.getElementById("paymentSlider");
 if (paymentSlider) {
@@ -97,4 +97,5 @@ video.addEventListener('play', () => {
 
 video.addEventListener('pause', () => {
   playButton.style.display = 'block';
+});
 });
