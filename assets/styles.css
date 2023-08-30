@@ -1482,6 +1482,10 @@ body {
   font-size: 22px;
 }
 
+.rate-form .arrow-icon {
+  margin-bottom: 7px;
+}
+
 @media(max-width:768px) {
   .desktop-amt {
     display: none;
