@@ -1499,4 +1499,12 @@ body {
     max-width: 160px;
     /* Adjust logo size as needed */
   }
+
+  .range-container {
+    width: 100%;
+  }
+
+  .slider-value {
+    width: max-content;
+  }
 }
