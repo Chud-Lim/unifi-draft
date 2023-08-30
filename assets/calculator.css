@@ -88,6 +88,11 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 30px;
 }
 
+.result-box .button {
+  max-width: 300px;
+  width: 100%;
+}
+
 @media (max-width: 991px) {
   .payment-info {
     width: 80%;
