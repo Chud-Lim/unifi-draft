@@ -1512,7 +1512,7 @@ body {
     width: max-content;
   }
 
-  body {
+  .tp-section {
     overflow-x: hidden;
   }
 }
