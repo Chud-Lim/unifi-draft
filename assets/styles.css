@@ -1511,4 +1511,8 @@ body {
   .slider-value {
     width: max-content;
   }
+
+  body {
+    overflow-x: hidden;
+  }
 }
