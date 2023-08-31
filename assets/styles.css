@@ -1486,6 +1486,10 @@ body {
   margin-bottom: 7px;
 }
 
+.tp-section {
+  padding: 70px 0;
+}
+
 @media(max-width:768px) {
   .desktop-amt {
     display: none;
